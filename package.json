@@ -10,7 +10,7 @@
     "node-sass": "^4.5.2"
   },
   "scripts": {
-    "start": "node start.js",
+    "start": "npm install && node start.js",
     "sass": "node-sass -o ./app/css ./dev/scss --output-style expanded",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
