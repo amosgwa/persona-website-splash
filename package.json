@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "serve": "^5.1.4"
+  },
+  "devDependencies": {
     "node-sass": "^4.5.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "npm install & serve ./app",
+    "start": "node start.js",
     "sass": "node-sass -o ./app/css ./dev/scss --output-style expanded",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
