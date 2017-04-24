@@ -1,24 +1,90 @@
-$container-background : #fff;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i');
 
 @mixin addBorder($stroke_size) {
-  border: $stroke_size solid #ccc;
+  //border: $stroke_size solid #ccc;
+  box-sizing: content-box;
+}
+
+
+$container-background : #fff;
+
+html {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
 }
 
 .cover-shadow {
-  background-color: #000;
-  opacity: 0.5;
+  background-color:rgba(0, 0, 0, 0.0);
 }
 
-.logo-container {
-  @include addBorder(0px);
-  background-color: $container-background;
+#main-content {
+  width: auto;
+
+  @media screen and (min-width: 640px) {
+    width:calc(100% * 1 / 3.001);
+    max-width: 300px;
+  }
 }
 
-.date-container {
-  background-color: $container-background;
+.info-container {
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 7px 17px 0px rgba(0, 0, 0, 0.51);
+
+  .logo {
+    padding: 5%;
+    background-color: rgba(255,255,255,1);
+    border-radius: 0px 0px 10px 10px ;
+  }
+
+  .date {
+    background-color: rgba(0,0,0,0.5);
+    padding: 5%;
+    border-radius: 10px 10px 0px 0px;
+
+    #month {
+      @include addBorder(1px);
+    }
+
+    #day {
+      @include addBorder(1px);
+    }
+
+    #title {
+      @include addBorder(1px);
+      font-style: italic;
+      padding-right: 5%;
+    }
+
+    #year {
+      @include addBorder(1px);
+      line-height: 100%;
+    }
+  }
+
 }
 
 .countdown-container {
   background-color: $container-background;
   color:red;
+}
+
+.credit {
+  color: #fff;
+
+  a {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.6rem;
+
+    &:hover {
+      color: #FFF;
+      opacity: 1;
+    }
+  }
 }
