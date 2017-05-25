@@ -1,2 +1,11 @@
 # Inform Optimization 2018 Conference
-![Screenshot](https://cloud.githubusercontent.com/assets/6025663/25317618/56bc3d9c-2839-11e7-902c-8e18a604ba09.png)
+### Development
+```
+node dev.js
+```
+### Deployment
+```
+npm start
+```
+![Screenshot](https://cloud.githubusercontent.com/assets/6025663/26473272/c00f3e9c-4167-11e7-9672-3c113ddfc5a0.png)
+![Screenshot](https://cloud.githubusercontent.com/assets/6025663/26473287/cdbc593a-4167-11e7-8bf2-e52807fe1647.png)
