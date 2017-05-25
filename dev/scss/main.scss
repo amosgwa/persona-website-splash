@@ -141,6 +141,10 @@ p {
   color: #E74C3C;
 }
 
+// Top
+#top {
+  height: 1px;
+}
 // Menu
 
 #menu {
@@ -166,18 +170,27 @@ p {
   }
 
   ul {
+    width: calc-width-columns(8);
     list-style: none;
     display: inline-block;
-
+    text-align: right;
     li {
-      display: inline-block;
-      margin-left: 20px;
+      display: inline-block;      
     }
   }
 
   a {    
     color: $dark-blue;
     letter-spacing: 0.1rem;
+    padding: 10px;
+    border-radius: 31px;
+    border: 1px solid #ffffff;
+
+    &:hover {
+      text-decoration: none;
+      border-radius: 31px;
+      border: 1px solid $dark-blue;
+    }
   }
 }
 

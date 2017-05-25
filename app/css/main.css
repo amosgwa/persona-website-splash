@@ -115,6 +115,10 @@ p {
   color: #E74C3C;
 }
 
+#top {
+  height: 1px;
+}
+
 #menu {
   font-weight: 400;
   background-color: #fff;
@@ -138,18 +142,28 @@ p {
 }
 
 #menu-container ul {
+  width: 620px;
   list-style: none;
   display: inline-block;
+  text-align: right;
 }
 
 #menu-container ul li {
   display: inline-block;
-  margin-left: 20px;
 }
 
 #menu-container a {
   color: #003468;
   letter-spacing: 0.1rem;
+  padding: 10px;
+  border-radius: 31px;
+  border: 1px solid #ffffff;
+}
+
+#menu-container a:hover {
+  text-decoration: none;
+  border-radius: 31px;
+  border: 1px solid #003468;
 }
 
 #intro {
