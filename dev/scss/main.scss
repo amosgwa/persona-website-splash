@@ -144,8 +144,15 @@ p {
 // Menu
 
 #menu {
-  margin-top: 40px;
   font-weight: 400;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  margin: 0 auto;
+  left: 0px;
+  right: 0px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 9px 0px;
 }
 
 #menu-container {
@@ -177,7 +184,7 @@ p {
 // Intro
 
 #intro {
-  margin-top: 40px;
+  margin-top: 100px;
   #network {
     position: absolute;
     top: 0px;
@@ -327,4 +334,72 @@ p {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
+}
+
+// Speakers begins
+
+#speakers {
+  
+}
+
+#speakers-container {
+  display: flex;
+  position: relative;
+}
+
+
+#speakers-desc {
+  width: 100%;
+  line-height: normal;
+
+  .speaker {
+    padding: 22px;
+    border-bottom: 1px solid #dadada;
+
+    .name {
+      color: #E74C3C;
+      font-size: 2.2rem;
+      margin-bottom: 11px;
+    }
+
+    .info {
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: #7D7D7D;      
+    }
+  }
+}
+
+// Tutorial begins
+
+#tutorials {
+  
+}
+
+#tutorials-container {
+  display: flex;
+  position: relative;
+}
+
+
+#tutorials-desc {
+  width: 100%;
+  line-height: normal;
+
+  .speaker {
+    padding: 22px;
+    border-bottom: 1px solid #dadada;
+
+    .name {
+      color: #E74C3C;
+      font-size: 2.2rem;
+      margin-bottom: 11px;
+    }
+
+    .info {
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: #7D7D7D;      
+    }
+  }
 }
