@@ -1,10 +1,9 @@
 # Inform Optimization 2018 Conference
-# Running
-## Development
+### Development
 ```
 node dev.js
 ```
-## Deployment
+### Deployment
 ```
 npm start
 ```
