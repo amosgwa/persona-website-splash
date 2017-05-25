@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "browser-sync": "^2.18.11",
     "serve": "^5.1.4"
   },
   "devDependencies": {

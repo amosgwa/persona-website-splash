@@ -21,9 +21,11 @@ browserSync.watch(path.styles.scss, function (event, file) {
     var npm_command = "npm run sass";
     // Compile SCSS to CSS.
     exec(npm_command, function(err){
-      if(err) return cb(err);
-      // Inject the updated CSS.
-      browserSync.reload( path.styles.css);
+      if(err) {
+        console.log("Sass compilation error", err);
+        return        
+      }
+      console.log("Compile Successful");
     });
   }
 });
@@ -33,6 +35,9 @@ browserSync.watch(path.html.src, browserSync.reload);
 
 // Watch JavaScript files
 browserSync.watch(path.scripts.src, browserSync.reload);
+
+// Watch JavaScript files
+browserSync.watch(path.styles.css, browserSync.reload);
 
 // Now init the Browsersync server
 browserSync.init({

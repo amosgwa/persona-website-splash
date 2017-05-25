@@ -4,69 +4,160 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>2018 Informs Optimization Society Meeting</title>
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+        <title>2018 Informs Optimization Society Meeting</title>                
         <link rel="stylesheet" href="css/uikit.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/jquery.min.js"></script>
-        <script src="js/uikit.min.js"></script>
-        <script src="js/jquery.fittext.js"></script>
         <script src="js/main.js"></script>
     </head>
 
     <body>
-        
-        <div class="uk-cover-container uk-text-left" uk-height-viewport>
-            <!--Cover image-->
-            <img src="images/bg_mini_2.jpg" alt="" uk-cover>
-            <!--Add a dark overlay over the image-->
-            <div class="uk-position-cover cover-shadow"></div>
+        <!--Menu begins-->
+        <section id="menu">
+            <div class="container" id="menu-container">
+                <img src="./images/logo.jpg" alt="" id="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SPEAKERS</a></li>
+                    <li><a href="#">VENUE</a></li>
+                    <li><a href="#">PROGRAM</a></li>
+                    <li><a href="#">COMITTEE</a></li>
+                    <li><a href="#">SPONSORS</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--Menu ends-->
+        <!--<div id="particle-canvas"></div>-->
 
-            <!--Main content begins-->
-            <div class="uk-position-cover">
-                <!--Grid starts-->
-                <div uk-grid>
+        <!--Intro begins-->
+        <section id="intro">
+            <div class="container" id="intro-container">
+                <div id="network">
+                    <img src="./images/network.png" alt="">
+                </div>
+                <img src="./images/intro_circle.png" alt="" id="intro-image">
+                <div id="intro-desc">
+                    <p>
+                        Optimization continues to grow as we face new problems, creating new challenges for optimization models and algorithms. Big data and machine learning have created an entirely new set of applications, as was highlighted in the successful 2014 conference at Rice University, but many other problems continue to arise. We need to solve ever larger integer programs, more complex nonlinear programs, and the broad spectrum of problems that introduce different forms of uncertainty.
+                    </p>
+                    <p>
+                        The theme of "optimization and learning" is designed to highlight not just the very visible problems introduced by big data and machine learning, but also the need to learn: about new applications as well as new theoretical and computational paradigms. For this reason, the 2016 meeting will feature a series of tutorial sessions designed to introduce people to new applications and new lines of investigation.
+                    </p>
+                    <p>
+                        The 2016 version of the IOS optimization conference will be held on the campus of Princeton University, March 17-19. With hopes that spring will be emerging by then, the conference will emphasize the introduction of new ideas, as well as continuing to report on significant advances.
+                    </p>
+                    <a href="#" class="button">Register to attend</a>
+                </div>
+            </div>
+        </section>
+        <!--Intro ends-->
 
-                    <!--Center side starts-->
-                    <div id="main-content" class="uk-position-center uk-text-center uk-padding-large">
-                        <div class="info-container">
-                            <div class="date uk-grid-collapse" uk-grid>
-                                <div class="uk-width-1-3">
-                                    <div id="month">
-                                        MARCH
-                                    </div>
-                                    <div id="day">
-                                        23-25
-                                    </div>
-                                </div>
-                                <div class="uk-width-2-3">
-                                    <div id="year">
-                                        2018
-                                    </div>
-                                </div>
-                                <div class="uk-width-expand uk-text-right">
-                                    <div id="title">
-                                        Informs Optimization Society Meeting<br>
-                                        Denver, CO 
-                                    </div>
-                                </div>
+        <!--Venue begins-->
+        <section id="venue">            
+            <div class="container sub-page" id="venue-container">
+                <div class="network-subpage">
+                    <img src="./images/network_subpage.png" alt="">
+                </div>
+                <div id="venue-desc">
+                    <h2 class="title">
+                        Venue
+                    </h2>
+                    <p>
+                        The conference will be held in Robertson hall, which is home to the Woodrow Wilson School, at the corner of Washington Road (the main road into Princeton from Route 1) and Prospect St. A picture of the building with links to a map and directions can be found at:
+                    </p>
+                    <a href="#" class="button">ROBERTSON HALL</a>
+                </div>
+                <div id="venue-menu">
+                    <ul>
+                        <li class="bullet-red"><a href="#">Getting to campus</a></li>
+                        <li class="bullet-blue"><a href="#">Hotel</a></li>
+                        <li class="bullet-yellow"><a href="#">Maps and Parking</a></li>
+                        <li class="bullet-green"><a href="#">Tours of UCD</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Venue ends-->
+
+        <!--Registration begins-->
+        <section id="registration">            
+            <div class="container sub-page" id="registration-container">
+                <div class="network-subpage">
+                    <img src="./images/network_subpage.png" alt="" class="flip">
+                </div>
+                <div id="registration-desc">
+                    <h2 class="title">
+                        Registration
+                    </h2>
+                    <p class="warning">
+                        Pre-Registration Deadline: Monday, February 15, 2016.
+                    </p>
+                    <p>
+                        Registration fees includes the conference banquet on Friday evening as well as drinks and snacks during the day. Participants can take advantage of on and off-campus dining facilities in Princeton.                    
+                    </p>                    
+                </div>
+                <!--Registration fee begins-->
+                <div id="registration-fee">
+                    <div class="registration-box">
+                        <div class="box-title box-green">
+                            Member
+                        </div>
+                        <div class="box-fee">
+                            <div class="pre">
+                                <div>PRE</div>
+                                <div>$425</div>
                             </div>
-                            <div class="logo">
-                                <img src="images/logo.jpg" alt="">
-                            </div>  
+
+                            <div class="late">
+                                <div>LATE</div>
+                                <div>$425</div>
+                            </div>
                         </div>
                     </div>
-                    <!--Center side ends-->
-                </div>
-                <!--Grid ends-->
-            </div>
-            <!--Main content ends-->
+                    <div class="registration-box">
+                        <div class="box-title box-blue">
+                            Non-Member
+                        </div>
+                        <div class="box-fee">
+                            <div class="pre">
+                                <div>PRE</div>
+                                <div>$425</div>
+                            </div>
 
-            <!--Photo credit-->
-            <div class="uk-position-small uk-position-bottom-right credit">
-                <a class="uk-button-text uk-button" href="https://www.flickr.com/photos/zachd1_618/6562432801/in/photolist-aZUbD8-4mJTWp-8AMuNt-bndbCS-KeeDF4-dofs6N-9epFZn-8CgD95-8hEBZM-Cqj37U-65eQXf-drd8hp-dY7ieY-drdi4C-8cBGqq-mxgpk6-8qcFAT-nurpA1-pHa5er-nv9Ewz-8LbuZ8-dH69cb-RWnLj-aC3A69-6yf5N-HhAihy-fGu3h3-bkunpJ-pWw7HC-q566fA-6wNLXN-8xpjWp-6AfRe8-kjWQSr-eZZDyJ-HbaHcA-fHkhJJ-fKcKcq-wE2WCQ-fKcD3L-wnThLr-QN7byY-47Q6yr-f16ccJ-oxSnuw-7YZxcQ-9o3QdT-wo89Ab-S1XtXE-dGZHLP" target="_blank">Photo : Zach Dischner</a>
+                            <div class="late">
+                                <div>LATE</div>
+                                <div>$425</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration-box">
+                        <div class="box-title box-purple">
+                            Student/retired
+                        </div>
+                        <div class="box-fee">
+                            <div class="pre">
+                                <div>PRE</div>
+                                <div>$425</div>
+                            </div>
+
+                            <div class="late">
+                                <div>LATE</div>
+                                <div>$425</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Registration ends-->
+                <a href="#" class="button">Register Online</a>
             </div>
-        </div>
+        </section>
+        <!--Registration ends-->
+
+
+        <!--Footer begins-->
+        <footer>
+            Informs Optimization Society Meeting - Denver, CO
+        </footer>
+        <!--Footer ends-->
     </body>
 </html>
