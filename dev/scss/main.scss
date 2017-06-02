@@ -15,7 +15,7 @@ $gutter-width: 20px;
 
 $container-background : #fff;
 $dark-blue: #003468;
-$font-color: #666;
+$font-color: #444;
 
 // Reset the padding and margins.
 * {
@@ -36,6 +36,8 @@ body {
 footer {
   text-align: center;
   padding: 40px;
+  clear: both;
+  margin-top: 40px;
 }
 
 a {
@@ -164,13 +166,13 @@ p {
   display: flex;
 
   img {
-    width: calc-width-columns(4);
+    width: calc-width-columns(3.5);
     align-self: center;
     height: auto;
   }
 
   ul {
-    width: calc-width-columns(8);
+    width: calc-width-columns(8.5);
     list-style: none;
     display: inline-block;
     text-align: right;
@@ -221,6 +223,9 @@ p {
   }
 
   #intro-desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     .button {
       color: $dark-blue;
       border: 2px solid $dark-blue;
@@ -262,6 +267,21 @@ p {
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
     }
+  }
+}
+
+.venue-title {
+  /* BY PLANE Princeton i: */
+  color:$dark-blue;
+  font-weight: 400;
+  letter-spacing: 0.59px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+#venue-main {
+  img {
+    opacity: 0.9;
   }
 }
 
@@ -369,16 +389,16 @@ p {
     padding: 22px;
     border-bottom: 1px solid #dadada;
 
-    .name {
+    .name a {
       color: #E74C3C;
       font-size: 2.2rem;
       margin-bottom: 11px;
+      font-weight: 300;
     }
 
     .info {
-      text-transform: uppercase;
-      font-size: 1rem;
-      color: #7D7D7D;      
+      font-size: 1.3rem;
+      color: #7D7D7D;     
     }
   }
 }
@@ -403,16 +423,38 @@ p {
     padding: 22px;
     border-bottom: 1px solid #dadada;
 
-    .name {
+    .name a {
       color: #E74C3C;
       font-size: 2.2rem;
       margin-bottom: 11px;
+      font-weight: 300;
     }
 
     .info {
       text-transform: uppercase;
       font-size: 1rem;
       color: #7D7D7D;      
+    }
+  }
+}
+
+// Sponsor begins
+#sponsors-container {
+  position: relative;
+}
+
+#sponsors-desc {
+  .sponsor {
+    display: flex;
+
+    .sponsor-image {
+      width: calc-width-columns(4);
+      height: auto;
+    }
+
+    .sponsor-info {
+      width: calc-width-columns(8);
+      padding-left: $gutter-width;
     }
   }
 }
