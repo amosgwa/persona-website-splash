@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Lato:700,700i,400,400i");
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +6,15 @@
 
 html {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #444;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  background: url("../images/bg_mini_2.jpg") bottom left no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 footer {
@@ -19,11 +22,12 @@ footer {
   padding: 40px;
   clear: both;
   margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.13);
 }
 
 a {
   color: #003468;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 p {
@@ -37,7 +41,7 @@ p {
 
 .button {
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 700;
   display: table;
   text-transform: uppercase;
   margin: 0 auto;
@@ -51,13 +55,13 @@ p {
 .title {
   font-size: 5rem;
   color: #003468;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
 
 .sub-page {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .bullet-red:before {
@@ -122,23 +126,29 @@ p {
 }
 
 #menu {
-  font-weight: 400;
-  background-color: #fff;
+  font-weight: 700;
   position: fixed;
   z-index: 999;
   top: 0;
   margin: 0 auto;
   left: 0px;
   right: 0px;
-  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 9px 0px;
 }
 
 #background {
   position: fixed;
-  opacity: 0.1;
+  z-index: -99999;
+  opacity: 0;
 }
 
 #menu-container {
+  border-radius: 0px 0px 20px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  /* box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66); */
+  padding: 0px 16px;
+  box-sizing: border-box;
   display: flex;
 }
 
@@ -174,7 +184,7 @@ p {
 }
 
 #intro {
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 #intro #network {
@@ -195,17 +205,24 @@ p {
 #intro-container {
   display: flex;
   position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
 }
 
 #intro-container img {
   width: 540px;
   align-self: center;
+  padding: 20px;
 }
 
 #intro-container #intro-desc {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 #intro-container #intro-desc .button {
@@ -216,10 +233,16 @@ p {
 #venue-container {
   display: flex;
   position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
 }
 
 #venue-desc {
   width: 540px;
+  padding: 40px;
 }
 
 #venue-desc .button {
@@ -248,7 +271,7 @@ p {
 .venue-title {
   /* BY PLANE Princeton i: */
   color: #003468;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.59px;
   line-height: 27px;
   text-transform: uppercase;
@@ -269,6 +292,13 @@ p {
 
 #registration-container {
   position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 #registration-fee {
@@ -285,14 +315,14 @@ p {
   text-align: center;
   color: #fff;
   padding: 32px;
-  font-weight: 400;
+  font-weight: 700;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
 
 .registration-box .box-fee {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #9B9B9B;
   background-color: #EEEEEE;
   border-bottom-left-radius: 16px;
@@ -347,6 +377,13 @@ p {
 #speakers-container {
   display: flex;
   position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 #speakers-desc {
@@ -363,7 +400,7 @@ p {
   color: #E74C3C;
   font-size: 2.2rem;
   margin-bottom: 11px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #speakers-desc .speaker .info {
@@ -374,6 +411,13 @@ p {
 #tutorials-container {
   display: flex;
   position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 #tutorials-desc {
@@ -390,7 +434,7 @@ p {
   color: #E74C3C;
   font-size: 2.2rem;
   margin-bottom: 11px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #tutorials-desc .speaker .info {
@@ -401,6 +445,13 @@ p {
 
 #sponsors-container {
   position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 #sponsors-desc .sponsor {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i');
+@import url('https://fonts.googleapis.com/css?family=Lato:700,700i,400,400i');
 
 @mixin addBorder($stroke_size) {
   //border: $stroke_size solid #ccc;
@@ -25,12 +25,15 @@ $font-color: #444;
 
 html {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: $font-color;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+  background: url("../images/bg_mini_2.jpg") bottom left no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 footer {
@@ -38,11 +41,12 @@ footer {
   padding: 40px;
   clear: both;
   margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.13);
 }
 
 a {
   color: $dark-blue;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 p {
@@ -56,7 +60,7 @@ p {
 
 .button {
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 700;
   display: table;
   text-transform: uppercase;
   margin: 0 auto;
@@ -70,13 +74,13 @@ p {
 .title {
   font-size: 5rem;
   color: $dark-blue;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
 
 .sub-page {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .bullet-red {
@@ -150,24 +154,29 @@ p {
 // Menu
 
 #menu {
-  font-weight: 400;
-  background-color: #fff;
+  font-weight: 700;
   position: fixed;
   z-index: 999;
   top: 0;
   margin: 0 auto;
   left: 0px;
-  right: 0px;
-  box-shadow: rgba(0, 0, 0, 0.13) 0px 3px 9px 0px;
+  right: 0px;  
 }
 
 #background {
   position: fixed;
-  opacity: 0.1;
+  z-index: -99999;
+  opacity: 0;
 }
 
 #menu-container {
-
+  border-radius: 0px 0px 20px 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
+  /* box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66); */
+  padding: 0px 16px;
+  box-sizing: border-box;
   display: flex;
 
   img {
@@ -204,7 +213,7 @@ p {
 // Intro
 
 #intro {
-  margin-top: 100px;
+  margin-top: 130px;
   #network {
     position: absolute;
     top: 0px;
@@ -223,15 +232,22 @@ p {
 #intro-container {
   display: flex;
   position: relative;
+  border-radius: $gutter-width;  
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+-moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
   img {
     width: calc-width-columns(7);
-    align-self: center;    
+    align-self: center; 
+    padding: $gutter-width;       
   }
 
   #intro-desc {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: $gutter-width;
     .button {
       color: $dark-blue;
       border: 2px solid $dark-blue;
@@ -247,11 +263,17 @@ p {
 #venue-container {
   display: flex;
   position: relative;
+  border-radius: $gutter-width;  
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
 }
 
 
 #venue-desc {
   width: calc-width-columns(7);
+  padding: $gutter-width*2;
 
   .button {
     color: $dark-blue;
@@ -279,7 +301,7 @@ p {
 .venue-title {
   /* BY PLANE Princeton i: */
   color:$dark-blue;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.59px;
   line-height: 27px;
   text-transform: uppercase;
@@ -302,6 +324,16 @@ p {
 
 #registration-container {
   position: relative;
+  border-radius: $gutter-width;  
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  padding: $gutter-width*2;
+  box-sizing: border-box;
+}
+
+#registration-desc{
 }
 
 #registration-fee {
@@ -317,14 +349,14 @@ p {
     text-align: center;
     color: #fff;
     padding: 32px;
-    font-weight: 400;
+    font-weight: 700;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
   }
 
   .box-fee {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #9B9B9B;
     background-color: #EEEEEE;
     border-bottom-left-radius: 16px;
@@ -384,6 +416,13 @@ p {
 #speakers-container {
   display: flex;
   position: relative;
+  border-radius: $gutter-width;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  padding: $gutter-width*2;
+  box-sizing: border-box;
 }
 
 
@@ -399,7 +438,7 @@ p {
       color: #E74C3C;
       font-size: 2.2rem;
       margin-bottom: 11px;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     .info {
@@ -418,6 +457,13 @@ p {
 #tutorials-container {
   display: flex;
   position: relative;
+  border-radius: $gutter-width;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  padding: $gutter-width*2;
+  box-sizing: border-box;
 }
 
 
@@ -433,7 +479,7 @@ p {
       color: #E74C3C;
       font-size: 2.2rem;
       margin-bottom: 11px;
-      font-weight: 300;
+      font-weight: 400;
     }
 
     .info {
@@ -447,6 +493,13 @@ p {
 // Sponsor begins
 #sponsors-container {
   position: relative;
+  border-radius: $gutter-width;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  padding: $gutter-width*2;
+  box-sizing: border-box;
 }
 
 #sponsors-desc {
