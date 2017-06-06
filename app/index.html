@@ -1,299 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-gb" dir="ltr">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>2018 Informs Optimization Society Meeting</title>
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>2018 Informs Optimization Society Meeting</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+        <link rel="stylesheet" href="css/uikit.min.css">
+        <link rel="stylesheet" href="css/splash.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/splash.js"></script>
+    </head>
 
-<body>
-    <div id="background">
-        <img src="./images/bg_mini_2.jpg" alt="">
-    </div>
-    <!--Menu begins-->
-    <div id="top"></div>
-    <section id="menu">
-        <div class="container" id="menu-container">
-            <img src="./images/logo.jpg" alt="" id="logo">
-            <ul>
-                <li><a href="#top">HOME</a></li>
-                <li><a href="#venue">VENUE</a></li>
-                <li><a href="#registration">REGISTERATION</a></li>
-                <li><a href="#speakers">SPEAKERS</a></li>
-                <li><a href="#tutorials">TUTORIALS</a></li>
-                <li><a href="#sponsors">SPONSORS</a></li>
-            </ul>
-        </div>
-    </section>
-    <!--Menu ends-->
-    <!--<div id="particle-canvas"></div>-->
-    <!--Intro begins-->
-    <section id="intro">
-        <div class="container" id="intro-container">
-            <div id="network">
-                <img src="./images/network.png" alt="">
-            </div>
-            <img src="./images/intro_circle.png" alt="" id="intro-image">
-            <div id="intro-desc">
-                <p>
-                    Optimization continues to create new challenges, both with respect to modeling and algorithms. The successful conferences
-                    at Princeton University in 2016 and Rice University in 2014 highlighted the challenges that we will continue
-                    to explore at this conference.
-                </p>
-                <p>
-                    The theme of "mountains of optimization" is designed to emphasize, in our mountain setting, the myriad of topics, both theoretical
-                    and applied, that confront optimizers today.
-                </p>
-                <a href="#venue" class="button">Learn More</a>
-            </div>
-        </div>
-    </section>
-    <!--Intro ends-->
-    <!--Venue begins-->
-    <section id="venue">
-        <div class="container sub-page" id="venue-container">
-            <div class="network-subpage">
-                <img src="./images/network_subpage.png" alt="">
-            </div>
-            <div id="venue-desc">
-                <h2 class="title">
-                    Venue
-                </h2>
-                <div id="venue-main">
-                    <img src="./images/ucd.png" alt="" class="">
-                    <!--<p>
-                        The conference will be held in the CU Denver Student Commons Building (SCB) of the University of Colorado Denver in downtown Denver.
-                    </p>-->
-                    <p>
-                        <br>
-                    <a href="https://goo.gl/maps/oz3K3dfQmpw" target="_blank" class="button"> CU Denver Student Commons Building (SCB) </a>
-                    </p>
-                </div>
-                <!--<div id="venue-airport">
-                    <span class="venue-title"><a href="./files/direction.pdf">Directions from Denver Airport Rail</a></span>
-                </div>-->
-            </div>
-            <div id="venue-menu">
-                <ul>
-                    <li class="bullet-blue"><a href="./files/direction.pdf">Directions from Denver Airport Rail</a></li>
-                    <li class="bullet-red"><a href="./files/parking.pdf">Parking Map</a></li>
-                    <!--<li class="bullet-blue"><a href="#">Hotel</a></li>
-                    <li class="bullet-yellow"><a href="#">Maps and Parking</a></li>
-                    <li class="bullet-green"><a href="#">Tours of UCD</a></li>-->
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--Venue ends-->
-    <!--Registration begins-->
-    <section id="registration">
-        <div class="container sub-page" id="registration-container">
-            <div class="network-subpage">
-                <img src="./images/network_subpage.png" alt="" class="flip">
-            </div>
-            <div id="registration-desc">
-                <h2 class="title">
-                    Registration
-                </h2>
-                <p class="warning">
-                    Pre-Registration Deadline: Friday, February 9, 2018.
-                </p>
-                <p>
-                    Registration fees includes the conference banquet on Friday evening as well as drinks and snacks during the day. Participants
-                    can take advantage of on and off-campus dining facilities in Princeton.
-                </p>
-            </div>
-            <!--Registration fee begins-->
-            <div id="registration-fee">
-                <div class="registration-box">
-                    <div class="box-title box-green">
-                        Member
-                    </div>
-                    <div class="box-fee">
-                        <div class="pre">
-                            <div>PRE</div>
-                            <div>$425</div>
-                        </div>
-                        <div class="late">
-                            <div>LATE</div>
-                            <div>$475</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="registration-box">
-                    <div class="box-title box-blue">
-                        Non-Member
-                    </div>
-                    <div class="box-fee">
-                        <div class="pre">
-                            <div>PRE</div>
-                            <div>$525</div>
-                        </div>
-                        <div class="late">
-                            <div>LATE</div>
-                            <div>$575</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="registration-box">
-                    <div class="box-title box-purple">
-                        Student/retired
-                    </div>
-                    <div class="box-fee">
-                        <div class="pre">
-                            <div>PRE</div>
-                            <div>$200</div>
-                        </div>
-                        <div class="late">
-                            <div>LATE</div>
-                            <div>$250</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Registration ends-->
-            <a href="https://online.informs.org/informsssa/evtssareg.custinfo?p_event_id=1223" class="button">Register Online</a>
-        </div>
-    </section>
-    <!--Registration ends-->
-    <!--Speakers begins-->
-    <section id="speakers">
-        <div class="container sub-page" id="speakers-container">
-            <div class="network-subpage">
-                <img src="./images/network_subpage.png" alt="">
-            </div>
-            <div id="speakers-desc">
-                <h2 class="title">
-                    Plenary Speakers
-                </h2>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="http://www2.isye.gatech.edu/people/faculty/Shabbir_Ahmed/" target="_blank">
-                            Shabbir Ahmed
-                            </a>
-                    </div>
-                    <div class="info">
-                        Georgia Tech
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="http://mgoycool.uai.cl/" target="_blank">Marcos Goycoolea</a>
-                    </div>
-                    <div class="info">
-                        Universidad Adolfo Ibáñez
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/mhardt.html" target="_blank">Moritz Hardt</a>
-                    </div>
-                    <div class="info">
-                        Google and University of California, Berkeley
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="http://www.caam.rice.edu/~ivhicks/Site/professional.html" target="_blank">Illya Hicks</a>
-                    </div>
-                    <div class="info">
-                        Rice
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="https://volgenau.gmu.edu/profile/view/7669" target="_blank">Karla Hoffman</a>
-                    </div>
-                    <div class="info">
-                        George Mason
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="http://tepper.cmu.edu/our-faculty-and-research/about-our-faculty/faculty-profiles/jh38/hooker-john" target="_blank">John Hooker</a>
-                    </div>
-                    <div class="info">
-                        Carnegie Mellon
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="https://wiki.mcs.anl.gov/leyffer/index.php/Sven_Leyffer" target="_blank">Sven Leyffer</a>
-                    </div>
-                    <div class="info">
-                        Argonne National Lab
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Speakers ends-->
-    <!--Tutorials begins-->
-    <section id="tutorials">
-        <div class="container sub-page" id="tutorials-container">
-            <div class="network-subpage">
-                <img src="./images/network_subpage.png" alt="" class="flip">
-            </div>
-            <div id="tutorials-desc">
-                <h2 class="title">
-                    Tutorials
-                </h2>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="http://users.iems.northwestern.edu/~4er/" target="_blank">Bob Fourer</a>
-                    </div>
-                    <div class="info">
-                        AMPL
-                    </div>
-                </div>
-                <div class="speaker">
-                    <div class="name">
-                        <a href="http://researcher.ibm.com/researcher/view.php?person=us-klotz" target="_blank">Ed Klotz</a>
-                    </div>
-                    <div class="info">
-                        CPLEX
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Tutorials ends-->
-    <!--sponsors begins-->
-    <section id="sponsors">
-        <div class="container sub-page" id="sponsors-container">
-            <div class="network-subpage">
-                <img src="./images/network_subpage.png" alt="" class="flip">
-            </div>
-            <div id="sponsors-desc">
-                <h2 class="title">
-                    sponsors
-                </h2>
-                <div class="sponsor">
-                    <div class="sponsor-image">
-                        <img src="./images/ampl.png" alt="" class="">
-                    </div>
-                    <div class="sponsor-info">
-                        AMPL Optimization develops and supports a powerful yet natural modeling language and system for creating and managing large,
-                        complex optimization problems. AMPL is notable for supporting a broad range of linear and nonlinear
-                        problem formulations and a large selection of popular large-scale solvers. New features include an
-                        integrated editor and command processor for development, and programming interfaces for integration
-                        into applications.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--sponsors ends-->
-    <!--Footer begins-->
-    <footer>
-        <strong>Informs Optimization Society Meeting - Denver, CO</strong>
-    </footer>
-    <!--Footer ends-->
-</body>
+    <body>
+        
+        <div class="uk-cover-container uk-text-left" uk-height-viewport>
+            <!--Cover image-->
+            <img src="images/bg_mini_2.jpg" alt="" uk-cover>
+            <!--Add a dark overlay over the image-->
+            <div class="uk-position-cover cover-shadow"></div>
 
+            <!--Main content begins-->
+            <div class="uk-position-cover">
+                <!--Grid starts-->
+                <div uk-grid>
+
+                    <!--Center side starts-->
+                    <a href="./info.html">
+                    <div id="main-content" class="uk-position-center uk-text-center uk-padding-large">
+                        <div class="info-container">
+                            <div class="date uk-grid-collapse" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div id="month">
+                                        MARCH
+                                    </div>
+                                    <div id="day">
+                                        23-25
+                                    </div>
+                                </div>
+                                <div class="uk-width-2-3">
+                                    <div id="year">
+                                        2018
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand uk-text-right">
+                                    <div id="title">
+                                        Informs Optimization Society Meeting<br>
+                                        Denver, CO 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo">
+                                <img src="images/logo.jpg" alt="">
+                            </div>  
+                        </div>
+                    </div>
+                    </a>
+                    <!--Center side ends-->
+                </div>
+                <!--Grid ends-->
+            </div>
+            <!--Main content ends-->
+
+            <!--Photo credit-->
+            <div class="uk-position-small uk-position-bottom-right credit">
+                <a class="uk-button-text uk-button" href="https://www.flickr.com/photos/zachd1_618/6562432801/in/photolist-aZUbD8-4mJTWp-8AMuNt-bndbCS-KeeDF4-dofs6N-9epFZn-8CgD95-8hEBZM-Cqj37U-65eQXf-drd8hp-dY7ieY-drdi4C-8cBGqq-mxgpk6-8qcFAT-nurpA1-pHa5er-nv9Ewz-8LbuZ8-dH69cb-RWnLj-aC3A69-6yf5N-HhAihy-fGu3h3-bkunpJ-pWw7HC-q566fA-6wNLXN-8xpjWp-6AfRe8-kjWQSr-eZZDyJ-HbaHcA-fHkhJJ-fKcKcq-wE2WCQ-fKcD3L-wnThLr-QN7byY-47Q6yr-f16ccJ-oxSnuw-7YZxcQ-9o3QdT-wo89Ab-S1XtXE-dGZHLP" target="_blank">Photo : Zach Dischner</a>
+            </div>
+        </div>
+    </body>
 </html>

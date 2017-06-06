@@ -40,8 +40,9 @@ footer {
   text-align: center;
   padding: 40px;
   clear: both;
-  margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.13);
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.44);
+  color: rgba(255, 255, 255, 0.6);  
 }
 
 a {
@@ -72,7 +73,7 @@ p {
 }
 
 .title {
-  font-size: 5rem;
+  font-size: 4rem;
   color: $dark-blue;
   font-weight: 400;
   text-transform: uppercase;
@@ -81,6 +82,10 @@ p {
 
 .sub-page {
   margin-top: 80px;
+  background-image: url("../images/network_subpage.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 80%;
 }
 
 .bullet-red {
@@ -132,6 +137,7 @@ p {
 }
 
 .network-subpage {
+  display: none;
   position: absolute;
   top: -30px;
   left: 0;
@@ -214,29 +220,21 @@ p {
 
 #intro {
   margin-top: 130px;
-  #network {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: -999;
-    opacity: 0.5;
-    img {    
-      width: 83%;
-      height: auto;
-      display: block;
-      margin-top: -30px;
-    }
-  }
 }
 
 #intro-container {
+  background-image: url("../images/network.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 78%;
+
   display: flex;
   position: relative;
   border-radius: $gutter-width;  
   background-color: #fff;
   -webkit-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
--moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  -moz-box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
+  box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
   img {
     width: calc-width-columns(7);
     align-self: center; 
@@ -294,6 +292,11 @@ box-shadow: 0px 18px 82px -3px rgba(0,0,0,0.66);
       text-transform: uppercase;
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
+
+      a {
+          width: 200px;
+          display: block;
+      }
     }
   }
 }
