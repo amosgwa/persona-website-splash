@@ -1,0 +1,20 @@
+
+<svg width="889px" height="579px" viewBox="0 0 889 579" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.705965%" y2="105.502505%" id="linearGradient-1">
+            <stop stop-color="#FF8888" offset="0%"></stop>
+            <stop stop-color="#F8BCE9" offset="51.1041366%"></stop>
+            <stop stop-color="#9BEEF6" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-23.6%" y="-46.2%" width="147.2%" height="192.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.77">
+        <g id="Desktop-HD" transform="translate(-477.000000, -377.000000)" fill="url(#linearGradient-1)">
+            <rect id="Stroy-box" filter="url(#filter-2)" x="604" y="504" width="635" height="325"></rect>
+        </g>
+    </g>
+</svg>

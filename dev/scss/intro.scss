@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Poppins:400,500');
+$document-width: 1400px;
+$container-background: #fff;
+$tag-color: #929292;
+$aesthetic-pink-color: #FF5D65;
+$code-blue-color: #46CAEE;
+$logo-grey-color: #F5F5F5;
+// Reset the padding and margins.
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 16px;
+    font-weight: 400;
+    color: $tag-color;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 960px;
+}
+
+#tag-line-container {
+    font-family: 'Fauna One', serif;
+    font-size: 32px;
+    line-height: 54px;
+    position: relative;
+    .aesthetic {
+        color: $aesthetic-pink-color;
+    }
+    .code {
+        color: $code-blue-color;
+    }
+}
+
+#life {
+    color: #fff;
+    font-family: 'Fauna One', serif;
+    font-size: 32px;
+    line-height: 54px;
+    z-index: 9;
+}
+
+#logo-container {
+    font-family: 'Poppins', sans-serif;
+    z-index: 0;
+    margin-bottom: -122px;
+}
+
+#logo {
+    font-size: 300px;
+    font-weight: 500;
+    height: 250px;
+    line-height: 250px;
+    text-align: right;
+    color: $logo-grey-color
+}
+
+#story-container-shadow {
+    position: absolute;
+    right: -170px;
+    top: -99px;
+    ;
+    opacity: 0.7;
+}
+
+#story-container {
+    /* Stroy box: */
+    background-image: linear-gradient(136deg, #FF8888 0%, #F8BCE9 51%, #9BEEF6 100%);
+    position: relative;
+    background-repeat: no-repeat;
+    height: 325px;
+    width: 650px;
+    color: #fff;
+}
+
+#story-container-and-shadow {
+    margin-top: -60px;
+    z-index: 1;
+    position: relative;
+}
+
+#story {
+    line-height: 30px;
+    font-size: 18px;
+    padding-left: 57px;
+    padding-top: 80px;
+    padding-right: 40px;
+}
+
+#links {
+    padding-top: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    li {
+        margin-bottom: 5px;
+    }
+    a {
+        color: #fff;
+    }
+    a:hover {}
+}
+
+#footer {
+    font-size: 16px;
+    color: #C4C4C4;
+    margin-bottom: 24px;
+    a {
+        color: #C4C4C4;
+    }
+}

@@ -1,0 +1,17 @@
+
+<svg width="635px" height="357px" viewBox="0 0 635 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="101.705965%" y2="105.502505%" id="linearGradient-1">
+            <stop stop-color="#FF8888" offset="0%"></stop>
+            <stop stop-color="#F8BCE9" offset="51.1041366%"></stop>
+            <stop stop-color="#9BEEF6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-555.000000, -470.000000)" fill="url(#linearGradient-1)">
+            <rect id="Stroy-box" x="555" y="470" width="635" height="357"></rect>
+        </g>
+    </g>
+</svg>
