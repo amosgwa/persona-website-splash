@@ -61,12 +61,6 @@ p {
   margin-bottom: 40px;
 }
 
-.sub_title {
-  font-size: 2rem;
-  color: #003468;
-  text-transform: uppercase;
-}
-
 .sub-page {
   margin-top: 80px;
   background-image: url("../images/network_subpage.png");
@@ -191,21 +185,19 @@ p {
 
 #menu-container ul li {
   display: inline-block;
-  margin-top: 5px;
 }
 
 #menu-container a {
   color: #003468;
   letter-spacing: 0.1rem;
-  padding: 10px 5px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 31px;
   border: 1px solid #ffffff;
-  font-size: 13px;
 }
 
 #menu-container a:hover {
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 31px;
   border: 1px solid #003468;
 }
 
@@ -299,53 +291,6 @@ p {
 
 #venue-main img {
   opacity: 0.9;
-}
-
-#schedule-container {
-  display: flex;
-  position: relative;
-  border-radius: 20px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
-  -moz-box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
-  box-shadow: 0px 18px 82px -3px rgba(0, 0, 0, 0.66);
-}
-
-#schedule table{
-  width: 50%;
-  border: 1px solid #ccc;
-  margin-bottom: 40px;
-  margin: 20px auto;
-}
-
-#schedule thead{
-  background-color: #424242;
-  border-radius: 20px;
-  color: #fff;
-}
-
-#schedule tbody{
-  
-}
-
-#schedule tr:nth-child(even){
-  background-color: #e4e4e4;
-}
-
-#schedule td{
-  padding: 10px;
-  width: 50%;
-}
-
-#schedule th{
-  padding: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-
-#schedule-desc {
-  width: 100%;
-  padding: 40px;
 }
 
 #registration {
@@ -523,12 +468,6 @@ p {
 
 #sponsors-desc .sponsor {
   display: flex;
-  margin-bottom: 40px;
-}
-
-#sponsors-desc :last-child {
-  display: flex;
-  margin-bottom: 0px;
 }
 
 #sponsors-desc .sponsor .sponsor-image {
