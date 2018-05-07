@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "npm install && nodejs start.js",
-    "dev": "npm install && nodejs dev.js",
+    "dev": "npm install && node dev.js",
     "sass": "node-sass -o ./app/css ./dev/scss --output-style expanded",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
