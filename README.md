@@ -1,4 +1,4 @@
-# Inform Optimization 2018 Conference
+# Amos website splash page
 ### Development
 ```
 npm run dev
@@ -7,5 +7,4 @@ npm run dev
 ```
 npm run start
 ```
-![Screenshot](https://cloud.githubusercontent.com/assets/6025663/26473272/c00f3e9c-4167-11e7-9672-3c113ddfc5a0.png)
-![Screenshot](https://cloud.githubusercontent.com/assets/6025663/26473287/cdbc593a-4167-11e7-8bf2-e52807fe1647.png)
+![blog_splash_template](https://user-images.githubusercontent.com/6025663/39709280-b8dc1ffc-51d6-11e8-9ed7-0e052143610f.png)
