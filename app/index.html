@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/intro.css">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
     <script src="js/uikit.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118772241-1"></script>
@@ -99,6 +100,49 @@
             <a href="mailto:samosgwa@gmail.com?subject=Hey Amos, I have an exciting opportunity">Amos Gwa</a>
         </div>
     </div>
+
+    <div id="container-mobile">
+        <div id="logo-container-mobile">
+            <div id="logo-mobile">
+                AG
+            </div>
+        </div>
+        <div id="tag-line-container-mobile">
+            <div class="tag-line-mobile">
+                <p>
+                    <span class="aesthetic">Aesthetic</span> is just as important as the
+                    <span class="code">&#123;code&#125;</span> that gives it life.  </p>
+            </div>
+        </div>
+        <div id="story-container-mobile">
+            <div>
+                <p id="story-mobile">
+                    I was once a curious boy from a small village in Myanmar. I am still curious, but I am creating those curiosities into realities.
+                    My life goal is to be a part of the technological advancements and inspire those with curiosities. Right
+                    now, I am making Android apps.
+                </p>
+            </div>
+            <div>
+                <div id="links-mobile">
+                    <li>
+                        <a href="http://github.com/amosgwa" target="_blank">/github</a>
+                    </li>
+                    <li>
+                        <a href="http://linkedin.com/in/amosgwa" target="_blank">/linkedin</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div id="footer-mobile">&copy;
+            <a href="mailto:samosgwa@gmail.com?subject=Hey Amos, I have an exciting opportunity">Amos Gwa</a>
+        </div>
     </div>
 </body>
+<script>
+    $(document).ready(() => {
+        console.log("document ready")
+        // $("#logo-mobile").fitText(.15);
+    })
+</script>
+
 </html>
