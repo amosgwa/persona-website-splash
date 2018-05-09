@@ -1,5 +1,5 @@
 # Amos website splash page
-I designed the attached image using Sketch. I love design and believe that it is as important as the code that gives it life. The design is rralized here : [amosgwa.com](www.amosgwa.com) using HTML and CSS.
+I designed the attached image using Sketch. I love design and believe that it is as important as the code that gives it life. The design is rralized here : [http://amosgwa.com](www.amosgwa.com) using HTML and CSS.
 ### Development
 ```
 npm run dev
